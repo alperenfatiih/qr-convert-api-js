@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  z-index: 0;
+}
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+
+  z-index: 0;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: -1;
+}
+section {
+  position: absolute;
+  left: 33%;
+  top: 25%;
+}
+.navBar {
+  display: flex;
+  justify-content: space-around;
+  font-size: 25px;
+  color: rgba(255, 255, 255, 0.993);
+}
+
+.wrapper {
+  width: 600px;
+  height: 210px;
+  border-radius: 10px;
+  background-color: whitesmoke;
+}
+.active {
+  width: 600px;
+  height: 450px;
+  transition-duration: 0.5s;
+}
+
+.wrapper .form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.wrapper .form input[type="url"] {
+  width: 300px;
+  height: 40px;
+  position: relative;
+  top: 50px;
+  right: 70px;
+  border-radius: 15px;
+  padding: 10px;
+}
+.wrapper .form input[type="button"] {
+  width: 100px;
+  height: 40px;
+  position: relative;
+  top: 10px;
+  left: 170px;
+  border: none;
+  border-radius: 15px;
+  background-color: rgb(255, 0, 0);
+  color: rgb(255, 255, 255);
+}
+
+.wrapper .form button {
+  width: 450px;
+  height: 40px;
+  position: relative;
+  top: 50px;
+  border: none;
+  border-radius: 15px;
+  background-color: rgba(255, 166, 0, 0.945);
+  color: rgb(255, 255, 255);
+}
+
+.wrapper .img {
+  width: 150px;
+  height: 150px;
+  position: relative;
+  top: 27%;
+  left: 37%;
+  z-index: 1;
+}
+
+.wrapper .defined {
+  width: 0;
+  height: 0;
+  position: relative;
+  z-index: -1;
+}
+.a {
+  position: absolute;
+  top: 95%;
+  left: 45%;
+  color: whitesmoke;
+}
