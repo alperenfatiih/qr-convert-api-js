@@ -4,8 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>QR Api</title>
+    <title>Document</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
   </head>
   <body>
     <nav class="navBar">
@@ -15,19 +19,17 @@
     <img src="blur.jpg" alt="" />
     <section>
       <div class="wrapper">
-        <form class="form" action="">
+        <div class="form-header">
           <label for=""></label>
           <input type="url" placeholder="Link giriniz" />
+          <i
+            id="resetButton"
+            class="fa-regular fa-circle-xmark"
+            aria-hidden="true"
+          ></i>
+        </div>
+        <div class="form-footer"><button type="submit">Convert</button></div>
 
-          <input
-            class="resetButton"
-            type="button"
-            value="Linki Sıfırla "
-            onClick="this.form.reset()"
-          />
-
-          <button type="submit">Convert</button>
-        </form>
         <div class="defined"><img src="" alt="" /></div>
       </div>
     </section>
