@@ -1,13 +1,14 @@
-let convertButton = document.querySelector(".wrapper .form button");
-let inputLink = document.querySelector(".wrapper .form input");
-let qrİmage = document.querySelector(".wrapper img");
 let wrapper = document.querySelector(".wrapper");
+let inputLink = document.querySelector(".wrapper .form-header input");
+let resetButton = document.querySelector("#resetButton");
+let convertButton = document.querySelector(".wrapper .form-footer button");
+let qrİmage = document.querySelector(".wrapper img");
 let image = document.querySelector(".wrapper .defined");
-let resetButton = document.querySelector(".wrapper .form .resetButton");
+
 convertButton.addEventListener("click", (event) => {
   event.preventDefault();
   let qrUrl = inputLink.value;
-  if (!qrUrl) return as();
+  if (!qrUrl) return;
   qrİmage.src = `https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=${qrUrl}`;
   wrapper.classList.add("active");
   image.classList.add("img");
@@ -18,4 +19,8 @@ resetButton.addEventListener("click", () => {
   wrapper.classList.remove("active");
   image.classList.remove("img");
   image.classList.add("defined");
+  reset(inputLink);
 });
+function reset(inputLink) {
+  inputLink.value = "";
+}
