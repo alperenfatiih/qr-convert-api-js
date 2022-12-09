@@ -24,9 +24,9 @@ img {
   z-index: -1;
 }
 section {
-  position: absolute;
-  left: 33%;
-  top: 25%;
+  display: flex;
+  justify-content: center;
+  margin: 115px 0;
 }
 .navBar {
   display: flex;
@@ -43,41 +43,41 @@ section {
 }
 .active {
   width: 600px;
-  height: 450px;
+  height: 420px;
   transition-duration: 0.5s;
 }
 
-.wrapper .form {
+.wrapper .form-header {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
+  margin: 30px 0;
 }
-.wrapper .form input[type="url"] {
-  width: 300px;
+.wrapper .form-header input {
+  width: 80%;
   height: 40px;
-  position: relative;
-  top: 50px;
-  right: 70px;
+
   border-radius: 15px;
   padding: 10px;
 }
-.wrapper .form input[type="button"] {
-  width: 100px;
-  height: 40px;
-  position: relative;
-  top: 10px;
-  left: 170px;
-  border: none;
-  border-radius: 15px;
-  background-color: rgb(255, 0, 0);
-  color: rgb(255, 255, 255);
+.wrapper .form-header i {
+  position: absolute;
+  font-size: 140%;
+  color: red;
+  left: 63.5%;
+  z-index: +1;
+  background-color: whitesmoke;
+  padding-right: 5px;
 }
-
-.wrapper .form button {
-  width: 450px;
+.wrapper .form-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper .form-footer button {
+  width: 85%;
   height: 40px;
-  position: relative;
-  top: 50px;
+  margin-top: 40px;
   border: none;
   border-radius: 15px;
   background-color: rgba(255, 166, 0, 0.945);
@@ -88,7 +88,7 @@ section {
   width: 150px;
   height: 150px;
   position: relative;
-  top: 27%;
+  top: 15%;
   left: 37%;
   z-index: 1;
 }
@@ -105,3 +105,29 @@ section {
   left: 45%;
   color: whitesmoke;
 }
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .wrapper .form-header i {
+    position: absolute;
+    font-size: 140%;
+    color: red;
+    left: 80%;
+    z-index: +1;
+    background-color: whitesmoke;
+    padding-right: 5px;
+  }
+  .a {
+    position: absolute;
+    top: 92%;
+    left: 21.3%;
+    color: whitesmoke;
+  }
+  .wrapper .img {
+    width: 150px;
+    height: 150px;
+    position: relative;
+    top: 12%;
+    left: 30%;
+    z-index: 1;
+  }
+}
+
